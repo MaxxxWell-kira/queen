@@ -1,0 +1,201 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins;
+background:#fffafc;
+color:#3a2a1f;
+}
+
+.contenedor{
+max-width:1200px;
+margin:auto;
+background:white;
+border-radius:15px;
+overflow:hidden;
+}
+
+header{
+text-align:center;
+padding:30px;
+background:#f8b6c6;
+}
+
+.logo{
+width:120px;
+}
+
+.slogan{
+font-size:16px;
+color:#3a2a1f;
+}
+
+nav{
+background:#C9A45C;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+}
+
+nav li{
+padding:15px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+.banner video{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+section{
+padding:40px;
+}
+
+.titulo{
+text-align:center;
+font-family:Playfair Display;
+color:#C9A45C;
+margin-bottom:20px;
+}
+
+.productos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.producto{
+background:white;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+padding-bottom:20px;
+}
+
+.producto img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.producto h3{
+margin:10px 0;
+}
+
+.producto p{
+font-weight:bold;
+}
+
+.producto button{
+background:#C9A45C;
+border:none;
+padding:10px 20px;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+.producto button:hover{
+background:#a88443;
+}
+
+.especial{
+width:250px;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+footer{
+text-align:center;
+background:#C9A45C;
+color:white;
+padding:20px;
+}
+
+.formulario{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:400px;
+margin:auto;
+}
+
+.formulario input,
+.formulario textarea{
+padding:10px;
+border:1px solid #ccc;
+}
+
+.formulario button{
+background:#C9A45C;
+border:none;
+padding:10px;
+color:white;
+}
+
+.whatsapp{
+position:fixed;
+bottom:90px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:28px;
+padding:12px;
+border-radius:50%;
+text-decoration:none;
+}
+
+.musica{
+position:fixed;
+bottom:20px;
+right:20px;
+background:white;
+padding:5px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+@media(max-width:700px){
+
+nav ul{
+flex-direction:column;
+}
+
+.banner video{
+height:200px;
+}
+footer{
+text-align:center;
+background:#C9A45C;
+color:white;
+padding:30px;
+}
+
+.redes{
+margin-top:10px;
+}
+
+.redes a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:600;
+}
+
+.redes a:hover{
+text-decoration:underline;
+}
+
+}
